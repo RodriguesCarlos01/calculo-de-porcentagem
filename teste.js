@@ -28,6 +28,11 @@ let botao = document.querySelector(".btn")
 	`Preço total da venda:   ${precoTotal.toFixed(2)}`, 
 	`Preço com desconto:     ${precoComDesconto.toFixed(2)}`
 	]
+	nomeDoProduto.value=""
+	preco.value=""
+	quantidade.value=""
+	desconto.value=""
+	recebeResultado.textContent=""
 
 	for( const resultadoParagrafo of geraParagrafos){
 
@@ -36,6 +41,8 @@ let botao = document.querySelector(".btn")
 		recebeResultado.appendChild(paragrafo)
 		
 	}
+
+
 	
 })
 
